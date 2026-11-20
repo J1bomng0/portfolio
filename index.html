@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="nav">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <div class="lights">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="window">
+                <div class="titlebar">c:/Tamar/portfolio <span class="dot"></span></div>
+                <div class="hero-content">
+                    <h1>HI, I am Tamar.<br>Frontend Developer<span class="asterisk">*</span></h1>
+                    <p>*Trying to be :)</p>
+                </div>
+            </div>
+        </section>
+        <div class="bar-start" id="bar-start">
+            <div class="social-bar" id="social-bar" aria-label="Contact links">
+                <img src="assets/bar.png" alt="">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tamar-lamparadze-7714b3297" aria-label="LinkedIn"></a>
+                    <a href="https://github.com/J1bomng0" aria-label="GitHub"></a>
+                    <a href="mailto:tamarlamparadze1@gmail.com" aria-label="Email"></a>
+                    <a href="https://wa.me/995555498803" aria-label="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+        <section id="about" class="about window">
+            <div class="titlebar">
+                <div class="title-pill">
+                    <span class="dot"></span> What Can I Offer
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="skills">
+                    <div>
+                        <h2>Programming</h2>
+                        <div class="skill-grid">
+                            <figure><img src="assets/Python.svg" alt=""><figcaption>Python</figcaption></figure>
+                            <figure><img src="assets/HTML5_logo.png" alt=""><figcaption>HTML</figcaption></figure>
+                            <figure><img src="assets/CSS3_logo_and_wordmark.png" alt=""><figcaption>CSS</figcaption></figure>
+                            <figure><img src="assets/JavaScript-logo.png" alt=""><figcaption>JavaScript</figcaption></figure>
+                            <figure><img src="assets/React-icon.svg" alt=""><figcaption>React</figcaption></figure>
+                            <figure><img src="assets/scala.png" alt=""><figcaption>Scala</figcaption></figure>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Programs</h2>
+                        <div class="skill-grid">
+                            <figure><img src="assets/psicon.svg" alt=""><figcaption>Photoshop</figcaption></figure>
+                            <figure><img src="assets/ai.svg" alt=""><figcaption>Illustrator</figcaption></figure>
+                            <figure><img src="assets/inDesignicon.svg" alt=""><figcaption>InDesign</figcaption></figure>
+                            <figure><img src="assets/figma.png" alt=""><figcaption>Figma</figcaption></figure>
+                            <figure><img src="assets/canva.png" alt=""><figcaption>Canva</figcaption></figure>
+                            <figure><img src="assets/autocad-icon.png" alt=""><figcaption>AutoCAD</figcaption></figure>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="position-heading">Current Position</h2>
+                <div class="jobs">
+                    <article>
+                        <img src="assets/sj.png" alt="">
+                        <p>Programming and Robotics Trainer<br>Steve Jobs American Academy, Batumi</p>
+                    </article>
+                    <article>
+                        <img src="assets/ng.png" alt="">
+                        <p>IT Support / Website Designer<br>New Geology Ltd.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="statusbar">Give me half a day I could learn any other program (^_−)☆ <span>⏻</span></div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Need Proof?</h2>
+            <div class="folders">
+                <div class="folder-tabs" role="tablist" aria-label="Projects">
+                    <button id="tab-1" role="tab" aria-controls="panel-1" aria-selected="true" class="folder-tab pink">Project 1</button>
+                    <button id="tab-2" role="tab" aria-controls="panel-2" aria-selected="false" tabindex="-1" class="folder-tab green">Project 2</button>
+                    <button id="tab-3" role="tab" aria-controls="panel-3" aria-selected="false" tabindex="-1" class="folder-tab gray">See All</button>
+                </div>
+                <div id="panel-1" role="tabpanel" aria-labelledby="tab-1" class="folder-panel pink">
+                    <img class="project-image" src="assets/evrika.png" alt="Evrika website preview"><div>
+                        <h3>Evrika</h3>
+                        <h4>Edtech web platform</h4>
+                        <p>Made for Georgian students who are taking university entrance exams in history. 
+                            Page includes notes on all necessary topics, tests, visuals of chronology and 
+                            questions and answers.
+                        </p>
+                        <p>Still under development</p>
+                        <a href="https://evrika.com.ge/">View project</a>
+                    </div>
+                </div>
+                <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" class="folder-panel green" hidden>
+                    <img class="project-image" src="assets/MM.png" alt="Marvel Mystery game preview">
+                    <div>
+                        <h3>Marvel Mystery</h3>
+                        <h4>AI-powered web game</h4>
+                        <p>Guess the Marvel character by asking questions before running out of tries.</p>
+                        <a href="https://j1bomng0.github.io/MarvelMystery/">View project</a>
+                    </div>
+                </div>
+                <div id="panel-3" role="tabpanel" aria-labelledby="tab-3" class="folder-panel gray" hidden>
+                    <div>
+                        <h3>Check Out Other Ones</h3>
+                        <p>Explore my other projects on GitHub.</p>
+                        <a href="projects.html">See All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Say Gamarjoba,<br>Hello or Hola :)</h2>
+            <div class="arrows">
+                <img src="assets/arrows.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>@ Tamar Lamparadze <br/> tamarlamparadze@gmail.com </span>
+        <div id="bar-dock" class="bar-dock"></div>
+        <div class="clock">
+            <time id="clock"></time>
+            <span id="date"></span>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamar - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="projects.js" defer></script>
+</head>
+<body class="desktop-page">
+
+    <header class="nav">
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+        <div class="lights" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </header>
+
+    <main class="desktop" id="desktop">
+
+        <button class="desktop-folder" data-project="0">
+            <img src="assets/folder.png" alt="">
+            <span>Project 1</span>
+        </button>
+
+        <button class="desktop-folder" data-project="1">
+            <img src="assets/folder.png" alt="">
+            <span>Project 2</span>
+        </button>
+
+        <button class="desktop-folder" data-project="2">
+            <img src="assets/folder.png" alt="">
+            <span>Project 3</span>
+        </button>
+
+        <button class="desktop-folder" data-project="3">
+            <img src="assets/folder.png" alt="">
+            <span>Project 4</span>
+        </button>
+
+        <button class="desktop-folder" data-project="4">
+            <img src="assets/folder.png" alt="">
+            <span>Project 5</span>
+        </button>
+
+        <!-- Project popup -->
+        <dialog class="project-window" id="project-window">
+
+            <div class="project-titlebar">
+                <span id="project-path"></span>
+                <button id="close-project" aria-label="Close project"></button>
+            </div>
+
+            <div class="project-window-content">
+
+                <img id="popup-image" alt="Project preview">
+
+                <div class="project-details">
+                    <h1 id="popup-title"></h1>
+                    <h2 id="popup-subtitle"></h2>
+                    <p id="popup-description"></p>
+                    <a id="popup-link" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <footer>
+        <span>@ Tamar</span>
+
+        <div class="bar-dock">
+            <div class="social-bar docked">
+                <img src="assets/bar.png" alt="">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"></a>
+                    <a href="https://github.com/J1bomng0" aria-label="GitHub"></a>
+                    <a href="mailto:YOUR_EMAIL" aria-label="Email"></a>
+                    <a href="https://wa.me/YOUR_NUMBER" aria-label="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clock">
+            <time id="clock"></time>
+            <span id="date"></span>
+        </div>
+    </footer>
+
+</body>
+</html>
