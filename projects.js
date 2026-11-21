@@ -3,42 +3,40 @@ const projects = [
     {
         title: "Evrika",
         subtitle: "Edtech web platform",
-        image: "assets/evrika.jpg",
-        description: "Made for Georgian students who are taking university entrance exams in history. Includes notes on all necessary topics, tests, visuals of chronology and questions and answers.",
+        image: "assets/evrika.png",
+        description: "Designed to make learning history engaging and accessible through interactive timelines, categorized Q&A, search features and more. Built using React, JavaScript, CSS, and Firebase.",
         link: "https://evrika.com.ge/"
     },
     {
         title: "Marvel Mystery",
         subtitle: "AI-powered web game",
-        image: "assets/marvel-mystery.jpg",
-        description: "An interactive guessing game where players identify a Marvel character by asking AI-powered questions before the timer runs out.",
+        image: "assets/MM.png",
+        description: "An interactive Marvel-themed guessing game where players identify mystery characters by asking questions and receiving AI-generated clues. Built using React, JavaScript, Node.js, Express, and Google Gemini AI.",
         link: "https://j1bomng0.github.io/MarvelMystery/"
     },
     {
-        title: "Project 3",
+        title: "Fanduri",
+        subtitle: "Interactive Virtual Instrument",
+        image: "assets/fanduri.png",
+        description: "A web-based Georgian Fanduri simulator that lets users play music using their keyboard. Built with HTML, CSS, and JavaScript.",
+        link: "https://j1bomng0.github.io/Fanduri/"
+    },
+    {
+        title: "New Geology",
         subtitle: "Coming soon",
-        image: "",
-        description: "Project description goes here.",
+        image: "assets/nn.png",
+        description: "A modern, responsive website designed in Figma for a Batumi-based geology company to showcase its services and projects. Tools: Figma (design completed, development in progress)",
         link: ""
     },
     {
-        title: "Project 4",
-        subtitle: "Coming soon",
-        image: "",
-        description: "Project description goes here.",
-        link: ""
-    },
-    {
-        title: "Project 5",
-        subtitle: "Coming soon",
-        image: "",
-        description: "Project description goes here.",
-        link: ""
+        title: "Sufra",
+        subtitle: "Restaurant Discovery Platform",
+        image: "assets/sufra.png",
+        description: "Developed as part of an acceleration program, designed to help users explore and discover restaurants that match their preferences.",
+        link: "https://j1bomng0.github.io/Sufra/"
     }
 ];
 
-
-// OPEN AND CLOSE PROJECT WINDOWS
 
 const projectWindow = document.getElementById("project-window");
 
