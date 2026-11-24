@@ -175,28 +175,7 @@
     cursor: pointer;
 }
 
-footer {
-    background: var(--window);
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 10px 2%;
-    gap: 12px;
-    font-weight: bold;
-    min-height: calc(var(--bar-height) + 20px);
-}
 
-.clock {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-}
-
-.bar-dock {
-    width: var(--bar-width);
-    height: var(--bar-height);
-}
 
 
 .clock {
@@ -318,12 +297,47 @@ footer {
     box-shadow: none;
 }
 
-/* Responsive */
+/* =========================
+   ABOUT PAGE RESPONSIVE
+   ========================= */
 
 @media (max-width: 768px) {
-    .about-description {
-        max-width: 100%;
+
+    .about-main {
+        padding: 50px 20px;
     }
+
+    .about-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .about-illustration {
+        width: 270px;
+        max-width: 100%;
+        height: 280px;
+        object-fit: contain;
+    }
+
+    .about-description {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-description h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about-description p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* About_me.txt window */
 
     .about-window-content {
         padding: 22px;
@@ -335,51 +349,74 @@ footer {
 
     .about-window-content p {
         font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .about-main {
-        padding: 70px 25px;
+        line-height: 1.5;
     }
 
-    .about-intro {
-        flex-direction: column;
-        gap: 30px;
-        margin-bottom: 80px;
-    }
-
-    .about-illustration {
-        width: 270px;
-        height: 280px;
-    }
-
-    .about-description {
-        text-align: center;
-    }
-
-    .about-description h1 {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .about-description p {
-        font-size: 20px;
-    }
+    /* Achievements and gallery */
 
     .achievements h2 {
         font-size: 32px;
+        text-align: center;
     }
 
     .photo-gallery {
         grid-template-columns: 1fr;
         gap: 40px;
+        width: 100%;
     }
 
     .photo-gallery .gallery-item {
         top: 0;
         left: 0;
         right: 0;
+        max-width: 100%;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .about-main {
+        padding: 35px 15px;
+    }
+
+    .about-illustration {
+        width: 220px;
+        height: 230px;
+    }
+
+    .about-description h1 {
+        font-size: 26px;
+    }
+
+    .about-description p {
+        font-size: 16px;
+    }
+
+    .about-window-content {
+        padding: 15px;
+    }
+
+    .about-window-content h1 {
+        font-size: 22px;
+    }
+
+    .about-window-content p {
+        font-size: 15px;
+    }
+
+    .achievements h2 {
+        font-size: 26px;
+    }
+
+    .photo-gallery {
+        gap: 25px;
     }
 }

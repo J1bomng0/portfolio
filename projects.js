@@ -191,9 +191,6 @@ window.addEventListener("resize", () => {
 
 });
 
-
-// FOOTER CLOCK
-
 function updateClock() {
 
     const now = new Date();

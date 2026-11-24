@@ -448,7 +448,6 @@ footer {
     font-size: 14px;
 }
 
-/* Mobile responsiveness */
 
 @media (max-width: 650px) {
     .nav nav {
@@ -457,7 +456,7 @@ footer {
 
     .lights i {
         width: 16px;
-        height: 11px;
+        height: 16px;
     }
 
     .hero {
@@ -497,19 +496,41 @@ footer {
         padding-top: 95px;
     }
 
+    @media (max-width: 650px) {
     footer {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        justify-content: stretch;
+        gap: 12px;
+        padding: 12px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 12px;
     }
 
     .bar-dock {
         grid-column: 1 / -1;
         grid-row: 1;
-        justify-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .clock {
         grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+        text-align: right;
+        margin-left: auto;
+        white-space: nowrap;
     }
+}
+
+#social-bar {
+    max-width: 100%;
+    gap: 10px;
+}
 
     .folder-tabs {
         padding-right: 4%;
@@ -519,8 +540,6 @@ footer {
         padding-inline: 6px 15px;
     }
 }
-
-/* Accessibility: reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -772,5 +791,38 @@ footer {
 
     .project-titlebar {
         font-size: 12px;
+    }
+
+    .desktop-page footer {
+        flex-shrink: 0;
+        margin-top: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .desktop-page .desktop {
+        flex: 1;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    footer {
+        padding: 10px;
+        gap: 8px;
+        font-size: 10px;
+    }
+
+    #social-bar {
+        gap: 6px;
+    }
+
+    #social-bar img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .clock {
+        font-size: 10px;
     }
 }
